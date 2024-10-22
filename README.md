@@ -63,5 +63,3 @@ The system monitors:
    Download the pre-trained YOLO model weights and config files from [YOLO official site](https://pjreddie.com/darknet/yolo/) or [OpenCV GitHub](https://github.com/opencv/opencv).  
 
 ---
-
-### 📂 Folder Structure Example  
