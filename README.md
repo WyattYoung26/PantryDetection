@@ -1,20 +1,67 @@
-Pantry Item Tracker using YOLO and Object Detection
+# 🛒 Pantry Item Tracker using YOLO and Object Detection
 
-Overview
-This project uses YOLO (You Only Look Once), a camera, and object detection to keep track of items in a pantry. The goal is to monitor items based on their shelf life, track when they are taken out, and when they are put back, providing a smart system to manage pantry inventory.
+## 📋 Overview  
+This project leverages **YOLO (You Only Look Once)** object detection, a camera, and real-time tracking to manage pantry inventory.  
+The system monitors:  
+- **Item usage** (tracking when items are removed or returned).  
+- **Shelf life** (alerting when items approach expiration).  
+- **Smart inventory updates** through a camera feed to ensure your pantry stays organized and well-stocked.
 
-Features
-Real-time object detection: Utilizes YOLO for identifying and tracking items in the pantry.
-Shelf life monitoring: Tracks the expiration date of items and alerts the user when an item is approaching its shelf life.
-Item status updates: Detects when items are removed and placed back into the pantry.
-Camera Integration: Uses a camera feed to constantly monitor pantry shelves and detect any changes in item placement.
-Tech Stack
-YOLO (You Only Look Once): Deep learning model for real-time object detection.
-OpenCV: Library for real-time computer vision to capture the camera feed.
-Python: Core programming language for integrating YOLO and OpenCV.
-TensorFlow/Keras (optional): For training or fine-tuning custom object detection models.
-How It Works
-Camera Setup: A camera is installed to monitor the pantry shelves. The camera feed is processed by the system to detect and track items.
-Object Detection: The YOLO model identifies and labels items in the pantry. Each item is logged with details like its name and position.
-Tracking Shelf Life: The system can associate expiration dates with detected items and track them over time.
-Item Movement Detection: The system detects when items are removed or placed back, updating the inventory in real-time.
+---
+
+## ✨ Features  
+- **Real-time object detection:**  
+   - Utilizes **YOLO** to detect and track pantry items with high accuracy.  
+- **Shelf life monitoring:**  
+   - Tracks expiration dates and sends alerts for items nearing their expiration.  
+- **Item status updates:**  
+   - Automatically logs when items are removed or returned to the pantry.  
+- **Camera integration:**  
+   - Uses a live camera feed to detect any changes in item placement.  
+
+---
+
+## 🛠️ Tech Stack  
+- **YOLO (You Only Look Once):** Deep learning model for real-time object detection.  
+- **OpenCV:** Library for real-time computer vision and capturing the camera feed.  
+- **Python:** Core language for integrating the YOLO model with the camera feed.  
+- **TensorFlow/Keras (optional):** To train or fine-tune custom object detection models if needed.
+
+---
+
+## 🧩 How It Works  
+
+1. **Camera Setup:**  
+   - A camera is installed to monitor pantry shelves, streaming a continuous video feed to the system.  
+
+2. **Object Detection:**  
+   - The YOLO model identifies and labels pantry items in the camera feed.  
+   - Detected items are logged with key information like their **name** and **position** on the shelf.  
+
+3. **Tracking Shelf Life:**  
+   - The system can associate expiration dates with items, keeping track of how long they’ve been in the pantry.  
+   - Alerts are triggered when an item approaches its expiration date.  
+
+4. **Item Movement Detection:**  
+   - When an item is removed or placed back, the system automatically updates the inventory status.  
+   - This provides real-time tracking of pantry usage.
+
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- **Camera or Webcam:** For capturing the pantry shelves in real time.  
+- **Python 3.x:** Install it from [here](https://www.python.org/downloads/).  
+- **Dependencies:** Install the required libraries using:
+
+    ```bash
+    pip install opencv-python-headless tensorflow numpy
+    ```
+
+- **YOLO Weights and Config Files:**  
+   Download the pre-trained YOLO model weights and config files from [YOLO official site](https://pjreddie.com/darknet/yolo/) or [OpenCV GitHub](https://github.com/opencv/opencv).  
+
+---
+
+### 📂 Folder Structure Example  
